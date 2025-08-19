@@ -57,7 +57,7 @@ A comprehensive NixOS 25.11 configuration optimized for gaming and content creat
 - **Anyrun** - Alternative application launcher
 
 ### Configuration Integration
-- **HyprlandDE-Quickshell** - Complete configuration from [ryzendew/HyprlandDE-Quickshell](https://github.com/ryzendew/HyprlandDE-Quickshell)
+- **Reborn-Quickshell** - Complete configuration from [ryzendew/Reborn-Quickshell](https://github.com/ryzendew/Reborn-Quickshell)
 - **Auto-copied configurations** for Hyprland, Quickshell, Waybar, SWWW, Wlogout, Fuzzel, Anyrun, GTK, and Qt themes
 
 ## 🛠️ Development & Utilities
@@ -91,7 +91,7 @@ A comprehensive NixOS 25.11 configuration optimized for gaming and content creat
 - **quickshell** - Quickshell shell
 - **hyprpolkitagent** - Hyprland polkit agent
 - **hyprswitch** - Window switcher
-- **HyprlandDE-Quickshell** - Complete desktop configuration
+- **Reborn-Quickshell** - Complete desktop configuration
 
 ### Overlays
 - **Chaotic-AUR** - Provides mesa-git, davinci-resolve-studio, and other packages
@@ -146,7 +146,7 @@ nixos/
 │   ├── 🛠️  programs/
 │   │   ├── system-programs.nix      # System programs & services
 │   │   └── polkit-rules.nix         # Polkit security rules
-│   └── 🎨 hyprlandde-quickshell.nix # HyprlandDE-Quickshell integration
+│   └── 🎨 hyprlandde-quickshell.nix # Reborn-Quickshell integration
 │
 ├── ⚙️  system/
 │   ├── system-config.nix           # System-level configuration
@@ -163,7 +163,7 @@ nixos/
 The configuration is modular and easily customizable:
 - `modules/desktop/desktop-environment.nix` - Desktop environment settings
 - `modules/programs/system-programs.nix` - System programs and services
-- `modules/hyprlandde-quickshell.nix` - HyprlandDE-Quickshell integration
+- `modules/hyprlandde-quickshell.nix` - Reborn-Quickshell integration
 - `hosts/default/home.nix` - User-specific configuration
 
 ## 📝 Notes

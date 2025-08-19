@@ -16,7 +16,7 @@
     hyprpolkitagent.url = "github:hyprwm/hyprpolkitagent";
     hyprswitch.url = "github:ryzendew/hyprswitch";
     hyprlandde-quickshell = {
-      url = "github:ryzendew/HyprlandDE-Quickshell/Stable";
+      url = "github:ryzendew/Reborn-Quickshell";
       flake = false;
     };
     nautilus-open-in-ptyxis = {

@@ -12,7 +12,7 @@ in
 {
   # Create the configuration files from the repository
   system.activationScripts.hyprlandde-quickshell = ''
-    echo "Setting up HyprlandDE-Quickshell configuration..."
+    echo "Setting up Reborn-Quickshell configuration..."
     
     # Create target directories if they don't exist
     mkdir -p ${targetDir}/hypr
@@ -89,20 +89,10 @@ in
       # Set proper ownership
       chown -R ${username}:users ${targetDir}/hypr
       chown -R ${username}:users ${targetDir}/quickshell
-      chown -R ${username}:users ${targetDir}/ags
-      chown -R ${username}:users ${targetDir}/waybar
-      chown -R ${username}:users ${targetDir}/swww
-      chown -R ${username}:users ${targetDir}/wlogout
-      chown -R ${username}:users ${targetDir}/fuzzel
-      chown -R ${username}:users ${targetDir}/anyrun
-      chown -R ${username}:users ${targetDir}/gtk-3.0
-      chown -R ${username}:users ${targetDir}/gtk-4.0
-      chown -R ${username}:users ${targetDir}/qt5ct
-      chown -R ${username}:users ${targetDir}/qt6ct
       
-      echo "HyprlandDE-Quickshell configuration copied successfully!"
+      echo "Reborn-Quickshell configuration copied successfully!"
     else
-      echo "Warning: HyprlandDE-Quickshell source directory not found"
+      echo "Warning: Reborn-Quickshell source directory not found"
     fi
   '';
 
