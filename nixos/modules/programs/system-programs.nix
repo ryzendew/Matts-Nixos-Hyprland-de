@@ -58,6 +58,9 @@
     
     # Theme utilities
     nwg-look
+    
+    # DaVinci Resolve Paid
+    (pkgs.callPackage /etc/nixos/davinci-resolve-paid.nix {})
   ];
 
   # Polkit configuration
@@ -75,6 +78,21 @@
       RestartSec = 1;
     };
   };
+
+  # DaVinci Resolve Paid auto-download
+  system.activationScripts.davinci-resolve = ''
+    echo "Setting up DaVinci Resolve Paid..."
+    
+    # Download the DaVinci Resolve Paid Nix file if it doesn't exist
+    if [ ! -f /etc/nixos/davinci-resolve-paid.nix ]; then
+      echo "Downloading DaVinci Resolve Paid Nix file..."
+      curl -s -o /etc/nixos/davinci-resolve-paid.nix "https://acuifex.ru/blog/cracking-davinci-resolve-studio-license/davinci-resolve-paid.nix"
+      chmod 644 /etc/nixos/davinci-resolve-paid.nix
+      echo "DaVinci Resolve Paid Nix file downloaded successfully!"
+    else
+      echo "DaVinci Resolve Paid Nix file already exists."
+    fi
+  '';
 
   # Import polkit rules
   imports = [ ./polkit-rules.nix ];

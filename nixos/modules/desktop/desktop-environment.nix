@@ -150,7 +150,6 @@
     unstablePkgs.hyprlock
     unstablePkgs.hyprgraphics
     unstablePkgs.aquamarine
-    unstablePkgs.davinci-resolve-studio
     unstablePkgs.rustup
     unstablePkgs.rustc
     unstablePkgs.swww
